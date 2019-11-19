@@ -337,11 +337,112 @@ template {
   display: none;
 }
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #37003c;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+main .leagues-clubs {
+  width: calc((100%/3)*2);
+}
+main .tables {
+  width: calc((100%/3)*1);
+}
+
+article {
+  width: 100%;
+}
+
+form {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  border-color: #e8e8e8;
+  padding-bottom: 10px;
+}
+form input[type=text] {
+  width: 94%;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: #e8e8e8;
+}
+form input[type=image] {
+  width: 30px;
+  height: 64px;
+}
+
+nav {
+  padding: 32px 72px 0 72px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 8%;
+  padding-bottom: 24px;
+}
+nav ul li.selected {
+  border-bottom: 8px solid #00ff77;
+}
+
+.search-club {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 80px 72px;
+}
+.search-club .results {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 188px);
+  grid-gap: 16px;
+  justify-content: center;
+}
+.search-club .results .one-club {
+  width: 188px;
+  height: 176px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-color: #e8e8e8;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.search-club .results .one-club img.logo {
+  width: 40px;
+  margin-bottom: 9px;
+}
+.search-club .results .one-club h2.name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #37003c;
+}
+.search-club .results .one-club:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=premier-league.css.map */
