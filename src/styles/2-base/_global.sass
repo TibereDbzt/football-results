@@ -1,5 +1,6 @@
 body
-  +font-style($roboto, $regular, 20px, $purple)
+  +font-style($roboto, $regular, 16px, $purple)
+  -ms-overflow-style: none
 
 main
   width: 100%
@@ -10,6 +11,10 @@ main
 
   .tables
     width: calc((100%/3)*1)
+
+  // .tables::
+  //   -webkit-scrollbar
+  //   width: 10px
 
 article
   width: 100%

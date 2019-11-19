@@ -346,11 +346,57 @@ h2 {
   margin: 0;
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   color: #37003c;
+  -ms-overflow-style: none;
 }
 
 main {
@@ -382,7 +428,19 @@ form input[type=text] {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 60px;
+  color: #37003c;
+}
+form input[type=text]::placeholder {
   color: #e8e8e8;
+  opacity: 1;
+}
+form input[type=text]::-ms-input-placeholder {
+  color: #e8e8e8;
+  opacity: 1;
+}
+form input[type=text]:-ms-input-placeholder {
+  color: #e8e8e8;
+  opacity: 1;
 }
 form input[type=image] {
   width: 30px;
@@ -414,13 +472,12 @@ nav ul li.selected {
 .search-club .results {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 188px);
+  grid-template-columns: repeat(auto-fill, 205px);
   grid-gap: 16px;
   justify-content: center;
 }
 .search-club .results .one-club {
-  width: 188px;
-  height: 176px;
+  height: 195px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -432,17 +489,92 @@ nav ul li.selected {
   cursor: pointer;
 }
 .search-club .results .one-club img.logo {
-  width: 40px;
+  width: 55px;
   margin-bottom: 9px;
 }
 .search-club .results .one-club h2.name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   color: #37003c;
 }
 .search-club .results .one-club:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tables {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #37003c;
+  background-image: url("../../build/images/icon_crown.svg");
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: -40% 11%;
+  padding: 144px 96px 96px 96px;
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+}
+.tables header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 18px;
+}
+.tables header img {
+  width: 68px;
+  height: 104px;
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tables header h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  color: #ffffff;
+  opacity: 0.1;
+}
+.tables .ranking .one-club {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  align-items: center;
+  height: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.tables .ranking .one-club .rank {
+  margin-right: 7px;
+}
+.tables .ranking .one-club .rank.first {
+  margin-right: 14.2px;
+}
+.tables .ranking .one-club span {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-right: 16px;
+}
+.tables .ranking .one-club .logo {
+  width: 20px;
+  height: 24px;
+  margin-right: 8px;
+}
+.tables .ranking .one-club .name {
+  width: 64%;
+}
+.tables .ranking .one-club .points {
+  white-space: nowrap;
+}
+.tables .gradient-hidder {
+  position: fixed;
+  bottom: 0;
+  width: 20%;
+  height: 90px;
+  background: linear-gradient(rgba(55, 0, 60, 0), #37003c);
 }
 
 /*# sourceMappingURL=premier-league.css.map */

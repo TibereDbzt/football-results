@@ -9,7 +9,19 @@ form
   input[type="text"]
     width: 94%
     border: none
-    +font-style($roboto, $medium, 60px, $grey)
+    +font-style($roboto, $medium, 60px, $purple)
+
+  input[type="text"]::placeholder
+    color: $grey
+    opacity: 1
+
+  input[type="text"]::-ms-input-placeholder
+    color: $grey
+    opacity: 1
+
+  input[type="text"]:-ms-input-placeholder
+    color: $grey
+    opacity: 1
 
   input[type="image"]
     width: 30px
