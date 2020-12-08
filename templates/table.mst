@@ -1,0 +1,9 @@
+{{#ranking}}
+<li class="one-club" data-teamid="{{team.id}}">
+  <p class="rank">{{position}}</p>
+  <span></span>
+  <img class="logo" src="{{team.crestUrl}}" alt="">
+  <h2 class="name">{{team.name}}</h2>
+  <p class="points">{{points}} pts</p>
+</li>
+{{/ranking}}

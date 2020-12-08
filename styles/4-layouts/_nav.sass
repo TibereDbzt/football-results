@@ -1,0 +1,48 @@
+// ---------------
+// SELECT A LEAGUE
+// ---------------
+nav
+  margin: 32px 72px 0 72px
+  position: relative
+
+  ul
+    list-style: none
+    display: flex
+    flex-wrap: nowrap
+
+    li
+      display: inline-block
+      margin-right: 9%
+      padding-bottom: 16px
+      cursor: pointer
+
+      img.disabled
+        opacity: 0.3
+        -webkit-filter: grayscale(100%)
+        -moz-filter: grayscale(100%)
+        -o-filter: grayscale(100%)
+        -ms-filter: grayscale(100%)
+        filter: grayscale(100%)
+
+      img.ligue1
+        width: 65px
+
+      img.bundesliga
+        width: 64px
+        margin-top: 1px
+
+      img.laliga
+        width: 42px
+        margin-top: 2px
+
+      img.seriea
+        width: 38px
+        margin-top: -6px
+
+  span.marker
+    display: block
+    width: 44px
+    height: 8px
+    transition: 0.3s
+    position: relative
+    left: 0

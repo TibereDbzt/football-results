@@ -1,0 +1,9 @@
+{{#resume}}
+<img src="{{crestUrl}}" class="logo" alt="{{name}}'s logo">
+<div class="infos">
+  <h1>{{shortName}}</h1>
+  <p>{{venue}}</p>
+  <p><span class="strong">Official website</span> : <a href="{{website}}" target="_blank">{{website}}</a></p>
+  <p><span class="strong">Head Coach</span> : {{coach}}</p>
+</div>
+{{/resume}}

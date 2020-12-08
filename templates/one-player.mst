@@ -1,0 +1,15 @@
+{{#players}}
+<div class="one-result one-player">
+  <div class="number">
+    <img src="images/icon_shirt.svg" alt="shirt icon">
+    <p>{{shirtNumber}}</p>
+  </div>
+  <h2 class="name">{{name}}</h2>
+  <div class="nationality">
+    <img src="{{flagURL}}" alt="{{nationality}}'s flag">
+    <p>{{nationality}}</p>
+  </div>
+  <p class="birthday">{{dateOfBirth}}</p>
+  <p class="position">{{position}}</p>
+</div>
+{{/players}}

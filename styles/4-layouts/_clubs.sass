@@ -1,0 +1,38 @@
+// -------------
+// SEARCH A CLUB
+// -------------
+.search-club
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1)
+  border-radius: 5px
+  padding: 80px 72px
+  width: 88%
+
+  .results
+    margin-top: 60px
+    display: grid
+    grid-template-columns: repeat(auto-fill, 200px)
+    grid-gap: 16px
+    justify-content: center
+
+    .one-club
+      height: 195px
+      border-radius: 10px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      border: 1px solid
+      border-color: $main2
+      transition: 0.2s
+      cursor: pointer
+      text-align: center
+
+      img.logo
+        width: 55px
+        margin-bottom: 9px
+
+      h2.name
+        +font-style($roboto, $medium, 17px)
+
+    .one-club:hover
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1)!important

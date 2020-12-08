@@ -1,0 +1,6 @@
+{{#results}}
+<div class="one-club one-result" data-teamid="{{id}}">
+  <img class="logo" src="{{crestUrl}}" alt="{{name}}'s logo">
+  <h2 class="name">{{shortName}}</h2>
+</div>
+{{/results}}

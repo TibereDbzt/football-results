@@ -1,0 +1,66 @@
+#loading
+  background-color: $PLsecondary
+  background-image: url('../images/bg_confetti.svg')
+  width: 100%
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 3
+  display: flex
+  justify-content: center
+  align-content: center
+  flex-wrap: wrap
+  z-index: 4
+
+  img.icon-loader
+    width: 88px
+    margin-bottom: 20px
+
+  .loader-container
+    display: flex
+    width: 100%
+    justify-content: center
+
+    .loader
+      height: 15px
+      background-color: $PLaccent
+      animation: loading 1.5s infinite
+      box-shadow: 0px 0px 10px #e8e8e847
+
+  h2
+    +font-style($roboto, $regular, 12px)
+    color: $PLaccent
+    text-align: center
+    line-height: 18px
+    position: absolute
+    bottom: 50px
+
+@keyframes loading
+  0%
+    padding-left: 0px
+    padding-right: 4px
+    transform: translateX(-40px)
+
+  25%
+    padding-left: 40px
+    padding-right: 0px
+    transform: translateX(0px)
+
+
+  50%
+    transform: translateX(40px)
+    padding-left: 4px
+    padding-right: 0px
+
+
+  75%
+    padding-left: 0px
+    padding-right: 40px
+    transform: translateX(00px)
+
+
+  100%
+    padding-right: 4px
+    padding-left: 0px
+    transform: translateX(-40px)

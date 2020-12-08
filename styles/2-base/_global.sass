@@ -1,0 +1,39 @@
+body
+  +font-style($roboto, $regular, 16px)
+  position: relative
+  overflow-x: hidden
+  overflow-y: hidden
+
+.tables::-webkit-scrollbar
+  display: none
+
+.leagues-clubs::-webkit-scrollbar
+  display: none
+
+textarea:focus, input:focus
+    outline: none
+
+*:focus
+    outline: none
+
+main
+  width: 100%
+  display: flex
+
+  .leagues-clubs
+    width: calc((100%/3)*2)
+    overflow-y: scroll
+    height: 762px
+    padding-right: 15px
+    overflow-x: hidden
+
+  .tables
+    width: calc((100%/3)*1)
+    position: absolute
+    right: 0
+
+article
+  width: 100%
+
+.no-scroll
+  overflow: hidden!important
